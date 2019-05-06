@@ -11,7 +11,8 @@
     "react": "^16.5.2",
     "react-css-themr": "^2.1.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "^2.0.4"
+    "react-scripts": "^2.0.4",
+    "snyk": "^1.161.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,12 +22,15 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "toolbox": "react-toolbox-themr",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
